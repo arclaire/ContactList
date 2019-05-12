@@ -215,8 +215,8 @@
 		CE8DF38F2287EAF200D4A628 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE8DF3902287EAF200D4A628 /* ContactDetail */,
 				CE8DF3932287EAF200D4A628 /* ContactList */,
+				CE8DF3902287EAF200D4A628 /* ContactDetail */,
 				CE8DF3992287EAF200D4A628 /* ContactEdit */,
 			);
 			path = View;
