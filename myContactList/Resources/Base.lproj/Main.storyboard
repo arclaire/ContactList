@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uW4-5c-Ob2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VCContactList" customModule="myContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ViewContactList" customModule="myContactList" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="LBd-Cl-cQD">
+                        <barButtonItem key="leftBarButtonItem" title="Groups" id="jhH-Oo-gdK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BcM-5q-xPG">
+                            <connections>
+                                <action selector="addContact:" destination="BYZ-38-t0r" id="N38-KE-hcE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vContactList" destination="8bC-Xf-vdC" id="wbd-fz-ArX"/>
+                        <segue destination="QOc-OV-57Q" kind="show" identifier="showContactDetail" id="AoL-Mk-Ppi"/>
+                        <segue destination="U4v-Jz-JKs" kind="presentation" identifier="openContactEdit" id="3F7-MD-yJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="114"/>
+        </scene>
+        <!--Contact Detail-->
+        <scene sceneID="Ux3-U8-mo5">
+            <objects>
+                <viewController id="QOc-OV-57Q" customClass="VCContactDetail" customModule="myContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="inp-uJ-pbR" userLabel="VContact Detail" customClass="ViewContactDetail" customModule="myContactList" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kwc-Ne-nJA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KEB-LU-VaW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="5S1-JV-s7u">
+                            <connections>
+                                <action selector="actOpenEditContact:" destination="QOc-OV-57Q" id="CuA-Fm-x1K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vContactDetail" destination="inp-uJ-pbR" id="MV6-W6-W8Y"/>
+                        <segue destination="U4v-Jz-JKs" kind="presentation" identifier="openContactEdit" id="VZw-lJ-aOO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoj-G2-9EW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N1g-Tx-gKx">
+            <objects>
+                <navigationController id="uW4-5c-Ob2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dbI-t6-vrb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ec9-fd-LzK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySo-P3-F9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="114"/>
+        </scene>
+        <!--Contact Edit-->
+        <scene sceneID="wGk-2j-YDv">
+            <objects>
+                <viewController id="THB-lg-6Au" customClass="VCContactEdit" customModule="myContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="84C-l8-uUG" customClass="ViewContactEdit" customModule="myContactList" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QrO-ac-zYG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nHD-7O-JZ0">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ot2-ut-iWy">
+                            <connections>
+                                <action selector="actCancel:" destination="THB-lg-6Au" id="zlS-6G-9UO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Rhc-DZ-HtP">
+                            <connections>
+                                <action selector="actDone:" destination="THB-lg-6Au" id="NIF-fp-n5s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vContactEdit" destination="84C-l8-uUG" id="Tr3-zQ-vXA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DfI-9a-YLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="938"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e3s-nv-5t3">
+            <objects>
+                <navigationController id="U4v-Jz-JKs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rBY-vB-vZC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="THB-lg-6Au" kind="relationship" relationship="rootViewController" id="3rE-cL-WQc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2D-Uy-omw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="938"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3F7-MD-yJd"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.31372549019607843" green="0.8901960784313725" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+</document>

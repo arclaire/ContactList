@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ust-Vt-MYF" customClass="CellContactDetail" customModule="myContactList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ust-Vt-MYF" id="U8p-a8-lZJ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="First Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzW-BB-cSX" userLabel="Title">
+                        <rect key="frame" x="24" y="18" width="79.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyQ-3D-C55" userLabel="Value">
+                        <rect key="frame" x="135.5" y="18" width="199.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLN-Ly-yVc" userLabel="Value">
+                        <rect key="frame" x="135.5" y="-0.5" width="223.5" height="56.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="KqK-fx-Wmp"/>
+                        </constraints>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="ust-Vt-MYF" id="p2H-s6-QeR"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="FLN-Ly-yVc" firstAttribute="leading" secondItem="AyQ-3D-C55" secondAttribute="leading" id="4TC-kB-ReN"/>
+                    <constraint firstItem="FLN-Ly-yVc" firstAttribute="centerY" secondItem="U8p-a8-lZJ" secondAttribute="centerY" id="53C-Ee-PZp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FLN-Ly-yVc" secondAttribute="trailing" id="5sx-89-FHv"/>
+                    <constraint firstItem="AyQ-3D-C55" firstAttribute="centerY" secondItem="NzW-BB-cSX" secondAttribute="centerY" id="N1d-AV-o3v"/>
+                    <constraint firstItem="NzW-BB-cSX" firstAttribute="width" secondItem="AyQ-3D-C55" secondAttribute="width" multiplier="4:10" id="R20-F7-sWG"/>
+                    <constraint firstItem="NzW-BB-cSX" firstAttribute="top" secondItem="U8p-a8-lZJ" secondAttribute="top" constant="18" id="VC4-Hz-DOu"/>
+                    <constraint firstAttribute="bottom" secondItem="NzW-BB-cSX" secondAttribute="bottom" constant="18" id="W2k-zp-HH3"/>
+                    <constraint firstItem="AyQ-3D-C55" firstAttribute="leading" secondItem="NzW-BB-cSX" secondAttribute="trailing" constant="32" id="Za5-Ax-L1K"/>
+                    <constraint firstItem="NzW-BB-cSX" firstAttribute="leading" secondItem="U8p-a8-lZJ" secondAttribute="leading" constant="24" id="mV5-3G-lmQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AyQ-3D-C55" secondAttribute="trailing" constant="24" id="wqc-3T-R9f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblTitle" destination="NzW-BB-cSX" id="rNh-h9-cUX"/>
+                <outlet property="lblValue" destination="AyQ-3D-C55" id="l6X-uV-n9v"/>
+                <outlet property="txtFieldValue" destination="FLN-Ly-yVc" id="mYf-Rd-X9I"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

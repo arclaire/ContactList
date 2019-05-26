@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewContactList" customModule="myContactList" customModuleProvider="target">
+            <connections>
+                <outlet property="actLoading" destination="Til-6V-BEO" id="TUl-Ho-fGI"/>
+                <outlet property="tblContacts" destination="7na-JM-Pls" id="VaK-Dp-Cm8"/>
+                <outlet property="vLoading" destination="DHC-hP-aFY" id="GAS-vq-4wb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7na-JM-Pls">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHC-hP-aFY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Til-6V-BEO">
+                            <rect key="frame" x="197" y="399" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Til-6V-BEO" firstAttribute="centerY" secondItem="DHC-hP-aFY" secondAttribute="centerY" id="dKG-pv-AGZ"/>
+                        <constraint firstItem="Til-6V-BEO" firstAttribute="centerX" secondItem="DHC-hP-aFY" secondAttribute="centerX" id="dze-FD-Lwu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7na-JM-Pls" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="EBp-nN-wve"/>
+                <constraint firstItem="DHC-hP-aFY" firstAttribute="trailing" secondItem="7na-JM-Pls" secondAttribute="trailing" id="HDV-QB-cwG"/>
+                <constraint firstItem="7na-JM-Pls" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L1K-8u-Hdh"/>
+                <constraint firstItem="7na-JM-Pls" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="RRA-Rs-ahO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="7na-JM-Pls" secondAttribute="top" id="Z0P-T2-nuM"/>
+                <constraint firstItem="DHC-hP-aFY" firstAttribute="bottom" secondItem="7na-JM-Pls" secondAttribute="bottom" id="i3l-3C-1d6"/>
+                <constraint firstItem="DHC-hP-aFY" firstAttribute="top" secondItem="7na-JM-Pls" secondAttribute="top" id="n76-NT-txF"/>
+                <constraint firstItem="DHC-hP-aFY" firstAttribute="leading" secondItem="7na-JM-Pls" secondAttribute="leading" id="zjq-QE-4D8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="63.768115942028992" y="49.553571428571423"/>
+        </view>
+    </objects>
+</document>
