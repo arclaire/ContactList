@@ -32,6 +32,7 @@
 		CE8DF3AF229A983800D4A628 /* ViewContactDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DF3AC229A983800D4A628 /* ViewContactDetail.xib */; };
 		CE8DF3B0229A983800D4A628 /* CellContactDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */; };
 		CE8DF3B1229A983800D4A628 /* CellContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */; };
+		CE8DF3B5229AAC8A00D4A628 /* ImageRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF3B4229AAC8A00D4A628 /* ImageRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		CE8DF3AC229A983800D4A628 /* ViewContactDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewContactDetail.xib; sourceTree = "<group>"; };
 		CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellContactDetail.xib; sourceTree = "<group>"; };
 		CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellContactDetail.swift; sourceTree = "<group>"; };
+		CE8DF3B4229AAC8A00D4A628 /* ImageRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRound.swift; sourceTree = "<group>"; };
 		E2F94694529A0B5367C52B17 /* Pods_myContactList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myContactList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED71BA1F3AAB281BF1F5E563 /* Pods-myContactListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myContactListTests.debug.xcconfig"; path = "Target Support Files/Pods-myContactListTests/Pods-myContactListTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8DF3832287EAF200D4A628 /* ExtView.swift */,
+				CE8DF3B4229AAC8A00D4A628 /* ImageRound.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -245,9 +248,9 @@
 			children = (
 				CE8DF3942287EAF200D4A628 /* CellContact.xib */,
 				CE8DF3952287EAF200D4A628 /* ViewContactList.xib */,
-				CE8DF3962287EAF200D4A628 /* CellContact.swift */,
 				CE8DF3972287EAF200D4A628 /* VCContactList.swift */,
 				CE8DF3982287EAF200D4A628 /* ViewContactList.swift */,
+				CE8DF3962287EAF200D4A628 /* CellContact.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				CE8DF3552287542C00D4A628 /* AppDelegate.swift in Sources */,
 				CE8DF3A32287EAF200D4A628 /* VCContactDetail.swift in Sources */,
 				CE8DF39D2287EAF200D4A628 /* Contacts.swift in Sources */,
+				CE8DF3B5229AAC8A00D4A628 /* ImageRound.swift in Sources */,
 				CE8DF3AA2287EAF200D4A628 /* VCContactEdit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
