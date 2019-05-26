@@ -29,6 +29,9 @@
 		CE8DF3A92287EAF200D4A628 /* ViewContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF3982287EAF200D4A628 /* ViewContactList.swift */; };
 		CE8DF3AA2287EAF200D4A628 /* VCContactEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF39A2287EAF200D4A628 /* VCContactEdit.swift */; };
 		CE8DF3AB2287EAF200D4A628 /* ViewContactEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF39B2287EAF200D4A628 /* ViewContactEdit.swift */; };
+		CE8DF3AF229A983800D4A628 /* ViewContactDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DF3AC229A983800D4A628 /* ViewContactDetail.xib */; };
+		CE8DF3B0229A983800D4A628 /* CellContactDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */; };
+		CE8DF3B1229A983800D4A628 /* CellContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		CE8DF3982287EAF200D4A628 /* ViewContactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContactList.swift; sourceTree = "<group>"; };
 		CE8DF39A2287EAF200D4A628 /* VCContactEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCContactEdit.swift; sourceTree = "<group>"; };
 		CE8DF39B2287EAF200D4A628 /* ViewContactEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContactEdit.swift; sourceTree = "<group>"; };
+		CE8DF3AC229A983800D4A628 /* ViewContactDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewContactDetail.xib; sourceTree = "<group>"; };
+		CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellContactDetail.xib; sourceTree = "<group>"; };
+		CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellContactDetail.swift; sourceTree = "<group>"; };
 		E2F94694529A0B5367C52B17 /* Pods_myContactList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myContactList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED71BA1F3AAB281BF1F5E563 /* Pods-myContactListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myContactListTests.debug.xcconfig"; path = "Target Support Files/Pods-myContactListTests/Pods-myContactListTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +231,9 @@
 		CE8DF3902287EAF200D4A628 /* ContactDetail */ = {
 			isa = PBXGroup;
 			children = (
+				CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */,
+				CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */,
+				CE8DF3AC229A983800D4A628 /* ViewContactDetail.xib */,
 				CE8DF3912287EAF200D4A628 /* VCContactDetail.swift */,
 				CE8DF3922287EAF200D4A628 /* ViewContactDetail.swift */,
 			);
@@ -375,8 +384,10 @@
 			files = (
 				CE8DF3A52287EAF200D4A628 /* CellContact.xib in Resources */,
 				CE8DF3A62287EAF200D4A628 /* ViewContactList.xib in Resources */,
+				CE8DF3B0229A983800D4A628 /* CellContactDetail.xib in Resources */,
 				CE8DF3A02287EAF200D4A628 /* Main.storyboard in Resources */,
 				CE8DF39E2287EAF200D4A628 /* Assets.xcassets in Resources */,
+				CE8DF3AF229A983800D4A628 /* ViewContactDetail.xib in Resources */,
 				CE8DF39F2287EAF200D4A628 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +515,7 @@
 				CE8DF3A22287EAF200D4A628 /* ServiceContacts.swift in Sources */,
 				CE8DF3A82287EAF200D4A628 /* VCContactList.swift in Sources */,
 				CE8DF39C2287EAF200D4A628 /* ExtView.swift in Sources */,
+				CE8DF3B1229A983800D4A628 /* CellContactDetail.swift in Sources */,
 				CE8DF3A42287EAF200D4A628 /* ViewContactDetail.swift in Sources */,
 				CE8DF3552287542C00D4A628 /* AppDelegate.swift in Sources */,
 				CE8DF3A32287EAF200D4A628 /* VCContactDetail.swift in Sources */,
