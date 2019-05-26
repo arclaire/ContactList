@@ -33,6 +33,7 @@ class ViewContactEdit: UIView {
     @IBOutlet weak fileprivate var actLoading: UIActivityIndicatorView!
     
     var caBgLayer: CAGradientLayer = CAGradientLayer()
+    
     //MARK: - Attributes Navigation
     fileprivate var contact: Contacts = Contacts()
     
