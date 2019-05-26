@@ -33,6 +33,7 @@
 		CE8DF3B0229A983800D4A628 /* CellContactDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */; };
 		CE8DF3B1229A983800D4A628 /* CellContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */; };
 		CE8DF3B5229AAC8A00D4A628 /* ImageRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DF3B4229AAC8A00D4A628 /* ImageRound.swift */; };
+		CE8DF3C2229AF2E800D4A628 /* ViewContactEdit.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DF3C1229AF2E700D4A628 /* ViewContactEdit.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		CE8DF3AD229A983800D4A628 /* CellContactDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellContactDetail.xib; sourceTree = "<group>"; };
 		CE8DF3AE229A983800D4A628 /* CellContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellContactDetail.swift; sourceTree = "<group>"; };
 		CE8DF3B4229AAC8A00D4A628 /* ImageRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRound.swift; sourceTree = "<group>"; };
+		CE8DF3C1229AF2E700D4A628 /* ViewContactEdit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewContactEdit.xib; sourceTree = "<group>"; };
 		E2F94694529A0B5367C52B17 /* Pods_myContactList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myContactList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED71BA1F3AAB281BF1F5E563 /* Pods-myContactListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myContactListTests.debug.xcconfig"; path = "Target Support Files/Pods-myContactListTests/Pods-myContactListTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,6 +260,7 @@
 		CE8DF3992287EAF200D4A628 /* ContactEdit */ = {
 			isa = PBXGroup;
 			children = (
+				CE8DF3C1229AF2E700D4A628 /* ViewContactEdit.xib */,
 				CE8DF39A2287EAF200D4A628 /* VCContactEdit.swift */,
 				CE8DF39B2287EAF200D4A628 /* ViewContactEdit.swift */,
 			);
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8DF3A52287EAF200D4A628 /* CellContact.xib in Resources */,
+				CE8DF3C2229AF2E800D4A628 /* ViewContactEdit.xib in Resources */,
 				CE8DF3A62287EAF200D4A628 /* ViewContactList.xib in Resources */,
 				CE8DF3B0229A983800D4A628 /* CellContactDetail.xib in Resources */,
 				CE8DF3A02287EAF200D4A628 /* Main.storyboard in Resources */,
